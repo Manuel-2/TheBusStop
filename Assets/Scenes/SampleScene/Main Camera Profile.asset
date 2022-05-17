@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Main Camera Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 957847535654744903}
---- !u!114 &957847535654744903
+  - {fileID: 8882776604400206907}
+--- !u!114 &8882776604400206907
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,11 +30,11 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.05
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 5
     min: 0
   scatter:
     m_OverrideState: 0
