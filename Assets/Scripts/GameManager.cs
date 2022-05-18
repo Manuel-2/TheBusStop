@@ -19,4 +19,23 @@ public class GameManager : MonoBehaviour
         }
         Application.targetFrameRate = 60;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ActivateEyeCactus();
+            ActivateMoonEyeLaunch();
+        }
+    }
+
+    private void ActivateEyeCactus()
+    {
+        GameObject.Find("EyeCactus").GetComponent<LiveCactus>().ActivateEyeCactus();
+    }
+
+    private void ActivateMoonEyeLaunch()
+    {
+        GameObject.Find("EyeContainer").GetComponent<MoonEye>().Launch();
+    }
 }
