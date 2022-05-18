@@ -20,6 +20,14 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    private void Start()
+    {
+        ActivateMoonEyeLaunch();
+        Invoke("ActivateEyesCar", 10);
+        Invoke("ActivateEyeCactus",54);
+        Invoke("ActivateBus", 100);
+    }
+
     private void Update()
     {
         // Delete Later
@@ -38,5 +46,15 @@ public class GameManager : MonoBehaviour
     private void ActivateMoonEyeLaunch()
     {
         GameObject.Find("EyeContainer").GetComponent<MoonEye>().Launch();
+    }
+
+    private void ActivateEyesCar()
+    {
+        GameObject.Find("EyeCar").GetComponent<CarOfEyes>().ActivateCarEyesEvent();
+    }
+
+    private void ActivateBus()
+    {
+        GameObject.Find("Bus").GetComponent<BusController>().StartFinalEvent();
     }
 }
