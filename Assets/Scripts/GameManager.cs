@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        // Delete Later
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ActivateEyeCactus();
