@@ -10,6 +10,11 @@ public class MainMenuCanvasController : MonoBehaviour
     [SerializeField] string MainSceneName;
     [SerializeField] SceneLoader sceneLoader;
 
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
