@@ -18576,9 +18576,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   busAnim: {fileID: 919132148802337868}
-  animationTrigger: start
+  animationTrigger: Start
   sceneLoader: {fileID: 1469359400}
   endingSceneName: Ending
+  audioSource: {fileID: 0}
 --- !u!95 &919132148802337868
 Animator:
   serializedVersion: 3
