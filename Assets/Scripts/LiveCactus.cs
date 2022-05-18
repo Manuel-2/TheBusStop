@@ -41,6 +41,5 @@ public class LiveCactus : MonoBehaviour
     public void ActivateEyeCactus()
     {
         isFollowingPlayer = true;
-        Debug.Log("Cactus Activated");
     }
 }

@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ActivateMoonEyeLaunch();
-        Invoke("ActivateEyesCar", 10);
-        Invoke("ActivateEyeCactus",54);
+        Invoke("ActivateEyesCar", 12);
+        Invoke("ActivateEyeCactus",56);
         Invoke("ActivateBus", 100);
     }
 

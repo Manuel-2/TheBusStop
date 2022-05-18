@@ -9,6 +9,11 @@ public class MainMenuCanvasController : MonoBehaviour
     [SerializeField] string credditsTrigger;
     [SerializeField] string MainSceneName;
     [SerializeField] SceneLoader sceneLoader;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
     public void StartGame()
     {
         sceneLoader.LoadScene(MainSceneName);
