@@ -6,6 +6,7 @@ public class LiveCactus : MonoBehaviour
 {
     [SerializeField] int stepDistance;
     [SerializeField] int finalXposition;
+    [SerializeReference] AudioSource audioSource;
 
     bool isFollowingPlayer = false;
 
@@ -14,6 +15,14 @@ public class LiveCactus : MonoBehaviour
         if (isFollowingPlayer)
         {
             DoStep();
+        }
+    }
+
+    private void OnBecameVisible()
+    {
+        if(this.transform.position.x == finalXposition)
+        {
+            audioSource.Play();
         }
     }
 
