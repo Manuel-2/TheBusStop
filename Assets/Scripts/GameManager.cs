@@ -24,18 +24,8 @@ public class GameManager : MonoBehaviour
     {
         ActivateMoonEyeLaunch();
         Invoke("ActivateEyesCar", 12);
-        Invoke("ActivateEyeCactus",56);
-        Invoke("ActivateBus", 100);
-    }
-
-    private void Update()
-    {
-        // Delete Later
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ActivateEyeCactus();
-            ActivateMoonEyeLaunch();
-        }
+        Invoke("ActivateEyeCactus",50);
+        Invoke("ActivateBus", 90);
     }
 
     private void ActivateEyeCactus()
