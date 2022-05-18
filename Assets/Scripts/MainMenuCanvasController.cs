@@ -8,10 +8,10 @@ public class MainMenuCanvasController : MonoBehaviour
     [SerializeField] Animator cameraAnim;
     [SerializeField] string credditsTrigger;
     [SerializeField] string MainSceneName;
-
+    [SerializeField] SceneLoader sceneLoader;
     public void StartGame()
     {
-
+        sceneLoader.LoadScene(MainSceneName);
     }
     
     public void ShowCreddits()
